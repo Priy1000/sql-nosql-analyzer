@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SQL vs NoSQL Analyzer</title>
+    <style>
+        body { font-family: Arial; background: #f5f5f5; padding: 20px; }
+        table { width: 60%; margin: auto; border-collapse: collapse; }
+        th, td { border: 1px solid #888; padding: 12px; text-align: center; }
+        th { background-color: #333; color: white; }
+        h1 { text-align: center; color: #333; }
+    </style>
+</head>
+<body>
+    <h1>SQL vs NoSQL Analyzer</h1>
+    <table>
+        <tr>
+            <th>Feature</th>
+            <th>MySQL</th>
+            <th>MongoDB</th>
+        </tr>
+        <tr>
+            <td>Status</td>
+            <td>{{ mysql_status }}</td>
+            <td>{{ mongo_status }}</td>
+        </tr>
+        <tr>
+            <td>Response Time (ms)</td>
+            <td>{{ mysql_time }}</td>
+            <td>{{ mongo_time }}</td>
+        </tr>
+        <tr>
+            <td>Structure</td>
+            <td>Tables (Relational)</td>
+            <td>Documents (JSON)</td>
+        </tr>
+        <tr>
+            <td>Schema</td>
+            <td>Strict</td>
+            <td>Flexible</td>
+        </tr>
+        <tr>
+            <td>Best Use Case</td>
+            <td>Banking, ERP</td>
+            <td>Social Apps, Logs</td>
+        </tr>
+    </table>
+</body>
+</html>

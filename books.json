@@ -1,0 +1,30 @@
+[
+  {
+    "book_id": 1,
+    "title": "Samsara",
+    "author": "Saksham Garg",
+    "genre": "Fantasy Fiction",
+    "year": 2022
+  },
+  {
+    "book_id": 2,
+    "title": "Ikigai",
+    "author": "Hector Gracia",
+    "genre": "Self Help",
+    "year": 2016
+  },
+  {
+    "book_id": 3,
+    "title": "Harry Potter",
+    "author": "J.K. Rowling",
+    "genre": "Fantasy",
+    "year": 1997
+  },
+  {
+    "book_id": 4,
+    "title": "One Indian Girl",
+    "author": "Chetan Bhagat",
+    "genre": "Fiction",
+    "year": 2016
+  }
+]

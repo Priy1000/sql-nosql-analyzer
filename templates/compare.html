@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Database Performance Comparison</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h2>Database Performance Comparison</h2>
+    <canvas id="perfChart" width="400" height="200"></canvas>
+    <script>
+        const ctx = document.getElementById('perfChart').getContext('2d');
+        const chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['MySQL', 'MongoDB'],
+                datasets: [{
+                    label: 'Time Taken (seconds)',
+                    data: [{{ sql_time }}, {{ mongo_time }}],
+                    backgroundColor: ['#4e79a7', '#59a14f']
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Time in Seconds'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+    <h3>Records Fetched</h3>
+    <p>MySQL: {{ sql_count }} records</p>
+    <p>MongoDB: {{ mongo_count }} records</p>
+</body>
+</html>
